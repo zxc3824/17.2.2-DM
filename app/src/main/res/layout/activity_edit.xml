@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#304269">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spin_feel"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:popupBackground="@drawable/rounded_color"
+            android:background="@drawable/rounded"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spin_weather"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:popupBackground="@drawable/rounded_color"
+            android:background="@drawable/rounded"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="글자를 입력하세요."
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btn_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#f26101"
+            android:onClick="onClick_modify"
+            android:text="Modify" />
+    </LinearLayout>
+
+</LinearLayout>

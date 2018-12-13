@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="abc.integratedtest.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:onClick="onClick_date"
+            android:singleLine="true"
+            android:text="@string/_2017_10_2017_10"
+            android:textColor="#111111"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="0dp" />
+
+        <Button
+            android:id="@+id/btn_chart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_chart"
+            android:onClick="onClick_chart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_delete"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_trashcan"
+            android:contentDescription="@string/deletemode"
+            android:onClick="onClick_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_create"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_pencil"
+            android:contentDescription="@string/creatememo"
+            android:onClick="onClick_createMemo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4fcff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:background="#000000"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice" />
+    </LinearLayout>
+
+</LinearLayout>

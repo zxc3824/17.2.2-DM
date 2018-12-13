@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Integrated Test</string>
+    <string name="deletemode">DeleteMode</string>
+    <string name="creatememo">CreateMemo</string>
+    <string name="_2017_10_2017_10">2017.10 - 2017.10</string>
+    <string name="text">Text</string>
+    <string name="feel">Feel</string>
+    <string name="weather">Weather</string>
+    <string name="createddate">CreatedDate</string>
+</resources>
